@@ -360,7 +360,17 @@ ORDER BY risk_score DESC, tenure_months;
 
 ```
 
-
+# DAX Calculations
+## Core Measures
+| Measure | DAX Formula | Purpose |
+| --- | --- | --- |
+| Total Customers | Total Customers = COUNT(telco_churn[customer_id]) | Count of unique customers |
+| Churned Customers | Churned Customers = CALCULATE(COUNT(telco_churn[customer_id]), telco_churn[churn] = "Yes") | Total number of churned customers |
+| Churn Rate % | Churn Rate % = DIVIDE([Churned Customers], [Total Customers], 0) | Proportion of churned customers |
+| Average Monthly Charges | Avg Monthly Charges = AVERAGE(telco_churn[monthly_charges]) | Overall average biling |
+| Average Tenure | Avg Tenure = AVERAGE(telco_churn[tenure_months]) | Used to compare churned vs retained |
+| Avg Charges (Chruned) | Avg Charges (Churned) = CALCULATE(AVERAGE(telco_churn[monthly_charges]), telco_churn[churn] = "Yes") | Avg. charges for churned customers |
+Avg Charges (Retained) | Avg Charges (Retained) = CALCULATE(AVERAGE(telco_churn[monthly_charges]), telco_churn[churn] = "No") | Avg. charges for retained customers |
 
 
 
