@@ -138,7 +138,11 @@ Before importing into PostgreSQL, the dataset was cleaned and structured in Exce
 ### Data Type Corrections
 | Column | Original Format | Final Format | Reason|
 | --- | --- | --- | --- |
-| tenure
+| tenure | General | Number (Renamed to teneure_months) | For numerical calculations & grouping |
+| monthly charges | General | Number (Renamed monthly_charges) | Required for aggregations (AVG, SUM) |
+| total charges | General | Number (Renamed total_charges after blanks replaced) | Ensures consistency in churn/lifetime value analysis |
+| senior citizen | Numeric (0/1) | Categorical (Yes/No) | Enhanced interpretability |
+| churn | General | Categorical (Yes/No) | Used for filtering and conditional calculations |
 
 
 
