@@ -116,6 +116,34 @@ To visualize churn insights and enable interactive data exploration for business
   - Slicers for interactive filtering by demographics, service type, and payment method
 - Enabled drill-down and tooltip features for exploratory analysis.
 
+# Data Collection
+## Source
+The dataset used for this project is the Telco Customer Churn dataset from Kaggle. It simulates customer activity for a fictional telecommunications company and is widely used in churn prediction case studies.
+## Structure & Format
+The dataset was originally provided in CSV and Excel format and contains detailed information on:
+- Customer Demographics
+  - customerID, gender, SeniorCitizen, Partner, Dependents
+- Account Information
+  - tenure, Contract, PaperlessBilling, PaymentMethod
+- Services Subscribed
+  - PhoneService, MultipleLines, InternetService, OnlineSecurity, OnlineBackup, DeviceProtection, TechSupport, StreamingTV, StreamingMovies
+- Financial Metrics
+  - MonthlyCharges, TotalCharges
+- Target Variable
+  - Churn (Yes/No)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
