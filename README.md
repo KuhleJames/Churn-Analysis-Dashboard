@@ -73,6 +73,23 @@ This solution leverages SQL and DAX calculations to generate KPIs, segment views
 - Churn-prone customers based on tenure or charges
 - Suggestions for retention campaigns (e.g., discounts, service upgrades)
 
+# Tools & Workflow
+This project was executed using a structured 3-phase workflow across Excel, PostgreSQL, and Power BI — each tool serving a specific purpose in the data analytics lifecycle.
+## Excle: Data Cleaning & Exploration
+### Purpose:
+To perform initial data cleaning, formatting, and exploratory analysis before moving into advanced querying.
+### Tasks Completed:
+- Identified and handled blank, inconsistent, and incorrectly formatted values.
+- Converted data types: e.g., Monthly Charges and Total Charges set as numeric.
+- Created a Tenure Group column (e.g., "0–6 months", "7–12 months", "1+ years") for segmentation.
+- Renamed ambiguous columns for clarity (e.g., tenure → tenure_months).
+#### Created pivot tables and charts to:
+- Calculate overall churn rate
+- Analyze churn by contract, internet service, and payment method
+- Explore average tenure and charges of churned vs retained customers
+###
+- Used histograms and conditional formatting to identify outliers in Monthly Charges and Tenure.
+
 
 
 
