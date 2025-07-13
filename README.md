@@ -158,10 +158,24 @@ Before importing into PostgreSQL, the dataset was cleaned and structured in Exce
 - Validated Data Types in SQL:
   - Ensured correct type mapping upon import (e.g., numeric, text, boolean)
 
+# SQL Analysis
+## Business Questions Answered
+After importing the cleaned dataset into PostgreSQL, several SQL queries were executed to explore and analyze churn behavior across various dimensions. Below are the key business questions addressed along with how they were solved:
+- What is the churn rate segmented by contract type, internet service, and payment method?
+``` sql
 
+SELECT 
+	contract,
+	internet_service,
+	payment_method,
+	COUNT(customer_id) AS total_customers,
+	SUM(CASE WHEN churn = 'Yes' THEN 1 ELSE 0 END) AS churned_customers,
+	ROUND(100 * SUM(CASE WHEN churn = 'Yes' THEN 1 ELSE 0 END) / COUNT(customer_id), 2) AS churn_rate_percentage
+FROM telco_churn
+GROUP BY contract, internet_service, payment_method
+ORDER BY churn_rate_percentage DESC;
 
-
-
+```
 
 
 
