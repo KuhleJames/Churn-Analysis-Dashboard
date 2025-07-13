@@ -110,7 +110,7 @@ To answer complex business questions through segmentation, grouping, ranking, an
   - How do service subscriptions correlate with churn?
 - Used CASE, GROUP BY, JOIN, and WINDOW FUNCTIONS (e.g., RANK, LAG) for advanced segmentation.
 - Prepared clean, query-ready datasets for Power BI consumption.
-  
+
 ## Power BI: Dashboard Development
 ### Purpose:
 To visualize churn insights and enable interactive data exploration for business users.
