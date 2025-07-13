@@ -27,7 +27,6 @@
   - [Business Questions Answered](#business-questioned-answered)
 - [DAX Calculations](#dax-calculations)
   - [Core Measures](#core-measures)
-  - [Time Intelligence](#time-intelligence)
 - [Dashboard Design](#dashboard-design)
   - [Visuals Used](#visuals-used)
 - [Key Insights](#key-insights)
@@ -372,7 +371,17 @@ ORDER BY risk_score DESC, tenure_months;
 | Avg Charges (Chruned) | Avg Charges (Churned) = CALCULATE(AVERAGE(telco_churn[monthly_charges]), telco_churn[churn] = "Yes") | Avg. charges for churned customers |
 Avg Charges (Retained) | Avg Charges (Retained) = CALCULATE(AVERAGE(telco_churn[monthly_charges]), telco_churn[churn] = "No") | Avg. charges for retained customers |
 
-
+# Dashboard Design
+The Power BI dashboard was designed to provide leadership and the Customer Success team with real-time visibility into churn trends, high-risk segments, and customer behavior patterns. It enables data-driven decisions through clear, interactive visuals.
+## Visuals Used
+| Visual | Purpose |
+| --- | --- |
+| KPI Cards | Display overall churn rate, number of churrned customers, and average monthly charges |
+| Bar Chart | Show churn rate by contract type, payment method, and internet servuce |
+| Stacked Column Chart | Compare churn vs retained customers by tenure hroup and gender |
+| Pie Chart | Show distribution of payment methods and chrn breakdown |
+| Heat Map | Identify high-churn combinations of contract + internet + payment method |
+| Slicer | Allow users to filter dashbaord by contract type, internet service, senior citizen, etc. |
 
 
 
