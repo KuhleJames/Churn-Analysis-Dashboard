@@ -376,12 +376,11 @@ The Power BI dashboard was designed to provide leadership and the Customer Succe
 ## Visuals Used
 | Visual | Purpose |
 | --- | --- |
-| KPI Cards | Display overall churn rate, number of churrned customers, and average monthly charges |
-| Bar Chart | Show churn rate by contract type, payment method, and internet servuce |
-| Stacked Column Chart | Compare churn vs retained customers by tenure hroup and gender |
-| Pie Chart | Show distribution of payment methods and chrn breakdown |
-| Heat Map | Identify high-churn combinations of contract + internet + payment method |
-| Slicer | Allow users to filter dashbaord by contract type, internet service, senior citizen, etc. |
+| KPI Cards | Display overall churn rate and  number of churrned customers |
+| Bar Chart | Show churn rate by contract type, payment method, and internet service; churn rate by partner and dependents |
+| Stacked Column Chart | Compare churn vs retained customers by tenure group |
+| Donut Chart | Show churn rate by senior citizen |
+| Slicer | Allow users to filter dashbaord by contract type, payment method, internet service, tenure group, churrned customers, dependants, senior citizen, gender |
 
 
 
