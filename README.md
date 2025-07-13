@@ -143,6 +143,20 @@ Before importing into PostgreSQL, the dataset was cleaned and structured in Exce
 | total charges | General | Number (Renamed total_charges after blanks replaced) | Ensures consistency in churn/lifetime value analysis |
 | senior citizen | Numeric (0/1) | Categorical (Yes/No) | Enhanced interpretability |
 | churn | General | Categorical (Yes/No) | Used for filtering and conditional calculations |
+### Cleaning & Enruchment Steps
+- Handled Missing Values:
+  - Replaced blanks in TotalCharges with 0 (or used median depending on analysis)
+  - Verified that no critical fields were null
+- Standardized Categories:
+ - Normalized entries like "No internet service" → "No" to avoid redundancy
+ - Removed white spaces and case mismatches in text fields
+- Created Tenure Groups:
+  - Added a derived column tenure_group for churn segmentation:
+    - 0–6 months, 7–12 months, 1+ years
+- Renamed Columns:
+  - Changed ambiguous names (e.g., tenure → tenure_months) for clarity during SQL queries and DAX formulas
+- Validated Data Types in SQL:
+  - Ensured correct type mapping upon import (e.g., numeric, text, boolean)
 
 
 
