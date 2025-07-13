@@ -384,15 +384,13 @@ The Power BI dashboard was designed to provide leadership and the Customer Succe
 | Slicer | Allow users to filter dashbaord by contract type, payment method, internet service, tenure group, churrned customers, dependants, senior citizen, gender |
 ## User Interaction & Features
 - Slicers & Filters:
-Enable filtering by contract, payment method, internet type, demographic segments (senior citizen, partner, dependents)
+  - Enable filtering by contract, payment method, internet type, demographic segments (senior citizen, partner, dependents)
 - Drill-Down Interactivity:
-Allows users to click into visuals to explore customer subgroups with high churn
+  - Allows users to click into visuals to explore customer subgroups with high churn
 - Tooltips:
-Hover-over info reveals specific customer counts and churn rates for each segment
+  - Hover-over info reveals specific customer counts and churn rates for each segment
 
-
-
-
+![Image Failed to Load](assets/images/Telco_Customer_Churn_Dashboard.jpg)
 
 
 
