@@ -39,9 +39,39 @@
 The telecommunications company is experiencing significant customer churn, particularly among month-to-month contract holders, fiber optic internet users, and customers using manual payment methods. Existing churn reports are static, spreadsheet-based, and lack clarity on the root causes of churn.
 
 This project presents a comprehensive, end-to-end churn analysis solution using Excel, PostgreSQL, and Power BI. By analysing customer behaviours and service usage patterns, we uncover key churn drivers and build an interactive dashboard to help the Customer Success Leadership Team make informed decisions and target high-risk customer segments more effectively.
+## Business Problem
+Customer churn directly impacts revenue, customer acquisition cost, and lifetime value. However, the company lacks:
+- Real-time insights into which customer segments are churning the most
+- Understanding of how churn correlates with contract type, tenure, services, or payment method
+- Tools to support proactive, data-driven retention campaigns
 
+As a result, retention efforts are reactive and inefficient.
+## Project Objective
+The objective of this project is to design a churn analysis dashboard that enables:
+- Tracking of overall churn rate and segment-wise churn patterns
+- Deeper understanding of customer behaviours associated with churn
+- Identification of high-risk segments for targeted retention
+- Empowerment of decision-makers to act quickly using visual, filterable insights
 
-
+This solution leverages SQL and DAX calculations to generate KPIs, segment views, and trends that inform strategic interventions.
+## Key Metrics & KPIs
+### Churn 
+- Overall churn rate (%)
+- Churn by contract type (month-to-month, one year, two year)
+- Monthly charges vs churn rate
+- Internet service type vs churn rate
+### Risk Segmentation
+- High-risk customer count by segment
+- Churn by tenure group (0–6 months, 7–12 months, 1+ years)
+- Manual vs auto payment method churn
+### Customer Profile Analysis
+- Impact of senior citizen status, partner status, and dependents on churn
+- Churn likelihood based on services subscribed
+- Gender-based churn patterns
+### Retention Opportunities
+- Top factors influencing churn (e.g., contract type, fiber internet, billing method)
+- Churn-prone customers based on tenure or charges
+- Suggestions for retention campaigns (e.g., discounts, service upgrades)
 
 
 
