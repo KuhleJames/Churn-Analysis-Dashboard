@@ -27,8 +27,9 @@
   - [Business Questions Answered](#business-questioned-answered)
 - [DAX Calculations](#dax-calculations)
   - [Core Measures](#core-measures)
-- [Dashboard Design](#dashboard-design)
+- [Dashboard Design](#dashboard-design) 
   - [Visuals Used](#visuals-used)
+  - [User Interaction & Features](#user-interaction-&-features)
 - [Key Insights](#key-insights)
   - [Trends Identified](#trends-identified)
   - [Recommendations](#recommendations)
@@ -381,8 +382,13 @@ The Power BI dashboard was designed to provide leadership and the Customer Succe
 | Stacked Column Chart | Compare churn vs retained customers by tenure group |
 | Donut Chart | Show churn rate by senior citizen |
 | Slicer | Allow users to filter dashbaord by contract type, payment method, internet service, tenure group, churrned customers, dependants, senior citizen, gender |
-
-
+## User Interaction & Features
+- Slicers & Filters:
+Enable filtering by contract, payment method, internet type, demographic segments (senior citizen, partner, dependents)
+- Drill-Down Interactivity:
+Allows users to click into visuals to explore customer subgroups with high churn
+- Tooltips:
+Hover-over info reveals specific customer counts and churn rates for each segment
 
 
 
