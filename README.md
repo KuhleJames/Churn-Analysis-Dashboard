@@ -61,17 +61,20 @@ This solution leverages SQL and DAX calculations to generate KPIs, segment views
 - Monthly charges vs churn rate
 - Internet service type vs churn rate
 
+
   
 ### Risk Segmentation
 - High-risk customer count by segment
 - Churn by tenure group (0–6 months, 7–12 months, 1+ years)
 - Manual vs auto payment method churn
 
+
   
 ### Customer Profile Analysis
 - Impact of senior citizen status, partner status, and dependents on churn
 - Churn likelihood based on services subscribed
 - Gender-based churn patterns
+
 
   
 ### Retention Opportunities
@@ -94,6 +97,7 @@ To perform initial data cleaning, formatting, and exploratory analysis before mo
   - Analyze churn by contract, internet service, and payment method
   - Explore average tenure and charges of churned vs retained customers
 - Used histograms and conditional formatting to identify outliers in Monthly Charges and Tenure.
+
 ## PostgreSQL: SQL Analysis
 ### Purpose:
 To answer complex business questions through segmentation, grouping, ranking, and filtering logic.
@@ -106,6 +110,7 @@ To answer complex business questions through segmentation, grouping, ranking, an
   - How do service subscriptions correlate with churn?
 - Used CASE, GROUP BY, JOIN, and WINDOW FUNCTIONS (e.g., RANK, LAG) for advanced segmentation.
 - Prepared clean, query-ready datasets for Power BI consumption.
+  
 ## Power BI: Dashboard Development
 ### Purpose:
 To visualize churn insights and enable interactive data exploration for business users.
