@@ -408,7 +408,19 @@ Users with services like online security, device protection, and tech support ar
 - Demographics: Senior Citizens Churn Slightly More
 Senior citizens and customers without partners or dependents are marginally more prone to churn, suggesting opportunity for more personalized engagement.
 
-
+# Recommendations
+- Incentivize Long-Term Contracts
+Offer discounts or bundled packages for 1–2 year contracts to move customers away from month-to-month.
+- Encourage AutoPay Adoption
+Introduce incentives for customers to use automatic payment methods, which correlate with lower churn.
+- Improve Onboarding for New Customers
+Focus retention efforts on customers in their first 6 months through welcome campaigns, check-ins, and satisfaction surveys.
+- Bundle Add-On Services
+Create value-based bundles including tech support, online backup, and device protection to increase stickiness.
+- Target High-Risk Segments with Campaigns
+Use churn models or segmentation logic to identify and prioritize outreach to fiber optic + month-to-month + manual pay customers.
+- Explore Pricing or Service Quality Issues
+Investigate whether higher churn among fiber optic users is due to cost, reliability, or unmet expectations.
 
 
 
