@@ -83,11 +83,10 @@ To perform initial data cleaning, formatting, and exploratory analysis before mo
 - Converted data types: e.g., Monthly Charges and Total Charges set as numeric.
 - Created a Tenure Group column (e.g., "0–6 months", "7–12 months", "1+ years") for segmentation.
 - Renamed ambiguous columns for clarity (e.g., tenure → tenure_months).
-#### Created pivot tables and charts to:
-- Calculate overall churn rate
-- Analyze churn by contract, internet service, and payment method
-- Explore average tenure and charges of churned vs retained customers
-###
+- Created pivot tables and charts to:
+  - Calculate overall churn rate
+  - Analyze churn by contract, internet service, and payment method
+  - Explore average tenure and charges of churned vs retained customers
 - Used histograms and conditional formatting to identify outliers in Monthly Charges and Tenure.
 
 
