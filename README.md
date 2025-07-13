@@ -392,6 +392,33 @@ The Power BI dashboard was designed to provide leadership and the Customer Succe
 
 ![Image Failed to Load](assets/images/Telco_Customer_Churn_Dashboard.jpg)
 
+# Key Insights
+This section highlights the most important patterns, discoveries, and strategic takeaways from the analysis.
+## Trend Identified
+- High Churn Among Month-to-Month Contracts
+Customers on month-to-month contracts show the highest churn rate by far — indicating a lack of long-term commitment.
+- Fiber Optic Internet Users Are More Likely to Churn
+Despite offering faster speeds, fiber optic users churn more than DSL or customers without internet service, suggesting possible dissatisfaction or pricing concerns.
+- Manual Payment Methods Have Higher Churn
+Customers who pay via electronic check churn significantly more than those using automatic payments (e.g., bank transfer, credit card).
+- Short Tenure = High Risk
+Customers within their first 6 months are far more likely to churn, especially if they also have month-to-month contracts.
+- Add-On Services Help Retain Customers
+Users with services like online security, device protection, and tech support are less likely to churn — bundled offerings appear to improve retention.
+- Demographics: Senior Citizens Churn Slightly More
+Senior citizens and customers without partners or dependents are marginally more prone to churn, suggesting opportunity for more personalized engagement.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
