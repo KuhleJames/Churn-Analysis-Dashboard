@@ -276,7 +276,7 @@ GROUP BY charge_quartile, charge_level
 ORDER BY charge_quartile;
 
 ```
-![Image Failed to Load](assets/images/Monthly_Charges_and_Churn_Sol_5.png)
+![Image Failed to Load](assets/images/Monthly_Charges_and_ Churn_Sol_5.png)
 
 - Which customers have multiple services and are they more or less likely to churn?
 ``` sql
