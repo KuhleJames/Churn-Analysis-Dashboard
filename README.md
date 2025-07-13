@@ -88,10 +88,33 @@ To perform initial data cleaning, formatting, and exploratory analysis before mo
   - Analyze churn by contract, internet service, and payment method
   - Explore average tenure and charges of churned vs retained customers
 - Used histograms and conditional formatting to identify outliers in Monthly Charges and Tenure.
-
-
-
-
+## PostgreSQL: SQL Analysis
+### Purpose:
+To answer complex business questions through segmentation, grouping, ranking, and filtering logic.
+### Tasks Completed:
+- Imported the cleaned Excel data into a PostgreSQL database.
+- Wrote SQL queries to answer questions such as:
+  - What is the churn rate by contract type, internet service, and payment method?
+  - Which tenure groups have the highest churn?
+  - Which segments show the highest revenue loss?
+  - How do service subscriptions correlate with churn?
+- Used CASE, GROUP BY, JOIN, and WINDOW FUNCTIONS (e.g., RANK, LAG) for advanced segmentation.
+- Prepared clean, query-ready datasets for Power BI consumption.
+## Power BI: Dashboard Development
+### Purpose:
+To visualize churn insights and enable interactive data exploration for business users.
+### Tasks Completed:
+- Imported SQL output tables into Power BI and built a star schema model.
+- Created DAX measures for key KPIs:
+  - Overall Churn Rate
+  - Churn Rate by Segment
+  - Average Monthly Charges (Churned vs Retained)
+- Built visuals including:
+  - KPI Cards for summary insights
+  - Bar Charts for churn by category (contract, internet service)
+  - Heatmaps and Stacked Columns for layered churn trends
+  - Slicers for interactive filtering by demographics, service type, and payment method
+- Enabled drill-down and tooltip features for exploratory analysis.
 
 
 
