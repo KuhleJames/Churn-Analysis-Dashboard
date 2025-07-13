@@ -61,17 +61,17 @@ This solution leverages SQL and DAX calculations to generate KPIs, segment views
 - Monthly charges vs churn rate
 - Internet service type vs churn rate
 
-### Risk Segmentation
+## Risk Segmentation
 - High-risk customer count by segment
 - Churn by tenure group (0–6 months, 7–12 months, 1+ years)
 - Manual vs auto payment method churn
   
-### Customer Profile Analysis
+## Customer Profile Analysis
 - Impact of senior citizen status, partner status, and dependents on churn
 - Churn likelihood based on services subscribed
 - Gender-based churn patterns
   
-### Retention Opportunities
+## Retention Opportunities
 - Top factors influencing churn (e.g., contract type, fiber internet, billing method)
 - Churn-prone customers based on tenure or charges
 - Suggestions for retention campaigns (e.g., discounts, service upgrades)
