@@ -310,4 +310,67 @@ FROM CTE_bucketed_customers
 GROUP BY service_tier
 ORDER BY churn_rate_percentage DESC;
 
+```
+-  How many customers are churned versus active by region or demographic group?
+``` sql
+
+SELECT 
+	gender, senior_citizen, partner, dependents,
+	COUNT(customer_id) AS total_customers,
+	SUM(CASE WHEN churn = 'Yes' THEN 1 ELSE 0 END) AS churned_customers,
+	ROUND(100 * SUM(CASE WHEN churn = 'Yes' THEN 1 ELSE 0 END) / COUNT(customer_id), 2) AS churn_rate_percentage
+FROM telco_churn
+GROUP BY gender, senior_citizen, partner, dependents
+ORDER BY churn_rate_percentage DESC;
+
+```
+- Can I generate datasets for “high-risk” customers based on churn probability thresholds?
+``` sql
+
+WITH CTE_scored_customers AS (
+    SELECT 
+        customer_id,
+        gender,
+        senior_citizen,
+        partner,
+        dependents,
+        tenure_months,
+        contract,
+        monthly_charges,
+        internet_service,
+        online_security,
+        tech_support,
+        paperless_billing,
+        churn,  
+-- Assign points based on churn risk factors
+        (CASE WHEN contract = 'Month-to-month' THEN 1 ELSE 0 END) +
+        (CASE WHEN tenure_months <= 6 THEN 1 ELSE 0 END) +
+        (CASE WHEN monthly_charges >= 80 THEN 1 ELSE 0 END) +
+        (CASE WHEN online_security = 'No' THEN 1 ELSE 0 END) +
+        (CASE WHEN tech_support = 'No' THEN 1 ELSE 0 END) +
+        (CASE WHEN paperless_billing = 'Yes' THEN 1 ELSE 0 END)
+        AS risk_score
+    FROM telco_churn
+)
+SELECT 
+    *
+FROM CTE_scored_customers
+WHERE risk_score >= 4
+ORDER BY risk_score DESC, tenure_months;
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
