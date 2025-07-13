@@ -84,7 +84,7 @@ This solution leverages SQL and DAX calculations to generate KPIs, segment views
 
 # Tools & Workflow
 This project was executed using a structured 3-phase workflow across Excel, PostgreSQL, and Power BI — each tool serving a specific purpose in the data analytics lifecycle.
-## Excle: Data Cleaning & Exploration
+## Excel: Data Cleaning & Exploration
 ### Purpose:
 To perform initial data cleaning, formatting, and exploratory analysis before moving into advanced querying.
 ### Tasks Completed:
