@@ -132,8 +132,13 @@ The dataset was originally provided in CSV and Excel format and contains detaile
 - Target Variable
   - Churn (Yes/No)
 
-
-
+# Data Preparation
+## Data Types & Formatting
+Before importing into PostgreSQL, the dataset was cleaned and structured in Excel to ensure consistency and compatibility. The following preparation steps were taken:
+### Data Type Corrections
+| Column | Original Format | Final Format | Reason|
+| --- | --- | --- | --- |
+| tenure
 
 
 
