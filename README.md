@@ -1,6 +1,6 @@
 # Churn-Analysis-Dashboard
 
-
+![Image Failed to Load](assets/images/Churn_Analysis_Image.png)
 
 
 # Table of contents
