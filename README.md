@@ -108,7 +108,7 @@ To answer complex business questions through segmentation, grouping, ranking, an
   - Which tenure groups have the highest churn?
   - Which segments show the highest revenue loss?
   - How do service subscriptions correlate with churn?
-- Used CASE, GROUP BY, CTEs, and WINDOW FUNCTIONS (e.g., RANK, LAG) for advanced segmentation.
+- Used CASE, GROUP BY, CTEs, and WINDOW FUNCTIONS for advanced segmentation.
 - Prepared clean, query-ready datasets for Power BI consumption.
 
 ## Power BI: Dashboard Development
