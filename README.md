@@ -133,9 +133,9 @@ The dataset used for this project is the Telco Customer Churn dataset from Kaggl
 ## Structure & Format
 The dataset was originally provided in CSV and Excel format and contains detailed information on:
 - Customer Demographics
-  - customerID, gender, SeniorCitizen, Partner, Dependents
+  - CustomerID, Gender, SeniorCitizen, Partner, Dependents
 - Account Information
-  - tenure, Contract, PaperlessBilling, PaymentMethod
+  - Tenure, Contract, PaperlessBilling, PaymentMethod
 - Services Subscribed
   - PhoneService, MultipleLines, InternetService, OnlineSecurity, OnlineBackup, DeviceProtection, TechSupport, StreamingTV, StreamingMovies
 - Financial Metrics
@@ -154,12 +154,10 @@ Before importing into PostgreSQL, the dataset was cleaned and structured in Exce
 | total charges | General | Number (Renamed total_charges after blanks replaced) | Ensures consistency in churn/lifetime value analysis |
 | senior citizen | Numeric (0/1) | Categorical (Yes/No) | Enhanced interpretability |
 | churn | General | Categorical (Yes/No) | Used for filtering and conditional calculations |
-### Cleaning & Enruchment Steps
+### Cleaning & Enrichment Steps
 - Handled Missing Values:
-  - Replaced blanks in TotalCharges with 0 (or used median depending on analysis)
   - Verified that no critical fields were null
-- Standardized Categories:
- - Normalized entries like "No internet service" → "No" to avoid redundancy
+- Standardised Categories:
  - Removed white spaces and case mismatches in text fields
 - Created Tenure Groups:
   - Added a derived column tenure_group for churn segmentation:
@@ -171,7 +169,7 @@ Before importing into PostgreSQL, the dataset was cleaned and structured in Exce
 
 # SQL Analysis
 ## Business Questions Answered
-After importing the cleaned dataset into PostgreSQL, several SQL queries were executed to explore and analyze churn behavior across various dimensions. Below are the key business questions addressed along with how they were solved:
+After importing the cleaned dataset into PostgreSQL, several SQL queries were executed to explore and analyse churn behavior across various dimensions. Below are the key business questions addressed along with how they were solved:
 - What is the churn rate segmented by contract type, internet service, and payment method?
 ``` sql
 
@@ -432,10 +430,10 @@ This section highlights the most important patterns, discoveries, and strategic 
 - Add-On Services Help Retain Customers
   - Users with services like online security, device protection, and tech support are less likely to churn — bundled offerings appear to improve retention.
 - Demographics: Senior Citizens Churn Slightly More
-  - Senior citizens and customers without partners or dependents are marginally more prone to churn, suggesting opportunity for more personalized engagement.
+  - Senior citizens and customers without partners or dependents are marginally more prone to churn, suggesting opportunity for more personalised engagement.
 
 # Recommendations
-- Incentivize Long-Term Contracts
+- Incentivise Long-Term Contracts
   - Offer discounts or bundled packages for 1–2 year contracts to move customers away from month-to-month.
 - Encourage AutoPay Adoption
   - Introduce incentives for customers to use automatic payment methods, which correlate with lower churn.
@@ -444,7 +442,7 @@ This section highlights the most important patterns, discoveries, and strategic 
 - Bundle Add-On Services
   - Create value-based bundles including tech support, online backup, and device protection to increase stickiness.
 - Target High-Risk Segments with Campaigns
-  - Use churn models or segmentation logic to identify and prioritize outreach to fiber optic + month-to-month + manual pay customers.
+  - Use churn models or segmentation logic to identify and prioritise outreach to fiber optic + month-to-month + manual pay customers.
 - Explore Pricing or Service Quality Issues
   - Investigate whether higher churn among fiber optic users is due to cost, reliability, or unmet expectations.
 
