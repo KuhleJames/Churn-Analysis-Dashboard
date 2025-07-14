@@ -113,7 +113,7 @@ To answer complex business questions through segmentation, grouping, ranking, an
 
 ## Power BI: Dashboard Development
 ### Purpose:
-To visualize churn insights and enable interactive data exploration for business users.
+To visualise churn insights and enable interactive data exploration for business users.
 ### Tasks Completed:
 - Imported SQL output tables into Power BI and built a star schema model.
 - Created DAX measures for key KPIs:
