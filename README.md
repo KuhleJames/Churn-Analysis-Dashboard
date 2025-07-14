@@ -96,7 +96,7 @@ To perform initial data cleaning, formatting, and exploratory analysis before mo
   - Calculate overall churn rate
   - Analyse churn by contract, internet service, and payment method
   - Explore average tenure and charges of churned vs retained customers
-- Used histograms and conditional formatting to identify outliers in Monthly Charges and Tenure.
+- Used histograms to identify outliers in Monthly Charges and Tenure.
 
 ## PostgreSQL: SQL Analysis
 ### Purpose:
