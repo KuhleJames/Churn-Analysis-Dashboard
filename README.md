@@ -115,15 +115,15 @@ To answer complex business questions through segmentation, grouping, ranking, an
 ### Purpose:
 To visualise churn insights and enable interactive data exploration for business users.
 ### Tasks Completed:
-- Imported SQL output tables into Power BI and built a star schema model.
+- Imported SQL output tables into Power BI.
 - Created DAX measures for key KPIs:
   - Overall Churn Rate
-  - Churn Rate by Segment
   - Average Monthly Charges (Churned vs Retained)
+  - Total Revenue
 - Built visuals including:
   - KPI Cards for summary insights
-  - Bar Charts for churn by category (contract, internet service)
-  - Heatmaps and Stacked Columns for layered churn trends
+  - Bar Charts for churn by segments (contract, internet service, payment method)
+  - Stacked Column and Donut Chart for churn by trend (tenure group, senior citizen)
   - Slicers for interactive filtering by demographics, service type, and payment method
 - Enabled drill-down and tooltip features for exploratory analysis.
 
