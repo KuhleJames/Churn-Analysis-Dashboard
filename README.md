@@ -94,7 +94,7 @@ To perform initial data cleaning, formatting, and exploratory analysis before mo
 - Renamed ambiguous columns for clarity (e.g., tenure → tenure_months).
 - Created pivot tables and charts to:
   - Calculate overall churn rate
-  - Analyze churn by contract, internet service, and payment method
+  - Analyse churn by contract, internet service, and payment method
   - Explore average tenure and charges of churned vs retained customers
 - Used histograms and conditional formatting to identify outliers in Monthly Charges and Tenure.
 
